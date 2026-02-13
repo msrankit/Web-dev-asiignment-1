@@ -1,0 +1,209 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    padding: 30px;
+    color: #333;
+}
+
+/* Main Container Look */
+h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+/* Section Headings */
+h2 {
+    margin: 20px 0 10px;
+    color: rgb(14, 7, 67);
+}
+
+/* Form Styling */
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    max-width: 600px;
+}
+
+form label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 5px rgba(102,126,234,0.5);
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+}
+.Event_section {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+
+.Add_event{
+    width: 30%;
+    margin: 20px;
+}
+.Create_event{
+
+    width: 70%;
+    background-color: rgb(244, 244, 244);
+    padding: 20px;
+    border-radius: 12px;
+    min-height: 400px;
+}
+
+/* Buttons */
+button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+button {
+    background: #667eea;
+    color: white;
+}
+
+button:hover {
+    background: #5a67d8;
+}
+
+#clearAllBtn {
+    background: #c15c5c;
+    color: white;
+}
+
+#clearAllBtn:hover {
+    background: #ec5555;
+}
+
+#addSampleBtn {
+    background: #65df82;
+    color: white;
+}
+
+#addSampleBtn:hover {
+    background: #48e16b;
+}
+
+/* Event Container */
+#eventContainer {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Event Card */
+#eventContainer div {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    position: relative;
+    transition: 0.3s;
+}
+
+#eventContainer div:hover {
+    transform: translateY(-5px);
+}
+
+/* Delete Button */
+.delete-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: crimson;
+    color: white;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.delete-btn:hover {
+    background: darkred;
+}
+
+/* Category Badge */
+#eventContainer span {
+    display: inline-block;
+    background: #764ba2;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+/* Empty State */
+.empty-state {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    color: #777;
+}
+
+/* DOM Demo Section */
+#demoContent {
+    background: white;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+@media (max-width: 900px) {
+    .Event_section {
+        flex-direction: column;
+    }
+
+    .Add_event,
+    .Create_event {
+        width: 100%;
+    }
+}
